@@ -1,0 +1,365 @@
+html{
+    min-width: 100%;
+    min-height: 100vh;
+}
+
+
+body{
+    height: 90vh;
+    margin: 0px auto;
+    padding: 0px auto;
+    background-color: #00112c;
+    
+}
+  
+#logo{
+    margin-top: 30px;
+    height: 100px;
+    width: auto;
+}
+  
+header{
+    height: 90px;
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    padding-bottom: 0px;
+    margin-bottom: 5vh;
+    background-color: #E40426;
+}
+
+#background{
+    background-image: url(/images/background.png);
+    background-repeat:no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: auto;
+    padding-bottom: 5px;
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #333;
+}
+
+.menu li a img {
+    display: flex;
+    width: 185px; /* Ajuste o tamanho da imagem */
+}
+.menu li{
+    width: 185px;
+    height: 39px;
+    text-align: center;
+}
+.menu li a img {
+    display: none;
+    width: 185px; /* Image width */
+    height: 39px; /* Image height */
+    padding-left: 5px; /* Padding on the left */
+    object-fit: cover;
+}
+
+.menu li a.active img {
+    display: inline; /* Exibe a imagem no item ativo */
+}
+
+.menu li a.active::before {
+    content: '';
+}
+
+#nav{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-self: flex-end;
+}
+
+#nav a{
+    height: 39px;
+    padding-top: 19px;
+}
+  
+.mySlides {display:none;}
+    .carrosselBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;    
+}
+.carrosselBox  h2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+}
+.carrossel{
+    max-width:500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: fit-content;
+    border-radius: 15px;
+    img{
+        border-radius: 15px;
+        margin-bottom: 15px;
+        width: 15em;
+        height: auto;
+    }
+}
+  
+p{
+    color: rgb(0, 0, 0);
+    background-color: #cdf1ffaf;
+    font-family: Arial, Helvetica, sans-serif;
+    width:70vw;
+    margin:auto;
+    padding: 10px;
+    padding-top: 5px;
+    text-align: justify;
+    font-size: 16px;
+}
+  
+#historia{
+    border: solid rgb(175, 135, 23) 3px;
+    border-radius: 5px;
+}
+  
+h1{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+  
+h2{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+  
+#link{
+    text-align: center;
+}
+  
+a{
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+a:hover{
+    color: #ff0000;
+}
+#sobreimg{
+    display: flex;
+    justify-content: center;
+}
+
+.imgDev{
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid rgb(175, 135, 23) 3px;
+    border-radius: 5px;
+}
+
+/* Footer styling */
+.footer {
+    position: static;
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 10px;
+    color: #f2f2f2;
+}
+
+.footer-section p{
+    color: #ccc;
+    background-color: #ffffff00;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a:hover {
+    color: #f2f2f2;
+}
+
+/* Social icons */
+.footer-section.social a img {
+    width: 24px;
+    margin-right: 10px;
+    transition: 0.3s;
+}
+
+.footer-section.social a img:hover {
+    opacity: 0.8;
+}
+
+/* Footer bottom */
+.footer-bottom {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    font-size: 14px;
+}
+
+footer{
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 600px){
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    body, html {
+        overflow-x: hidden; /* Disables horizontal scrolling */
+    }
+    
+    #background{
+        min-height: 100vh;
+        background-size: cover;
+        background-position-y: center;
+    }
+
+    header{
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        padding: 5px;
+        padding-bottom: 0px;
+        margin-bottom: 5vh;
+        background-color: #E40426;
+    }
+
+    .menu {
+            list-style-type: none;
+            padding: 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    }
+        
+    .menu li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: #333;
+    }
+        
+    .menu li a img {
+        display: flex;
+    }
+    .menu li{
+        height: auto;
+        text-align: center;
+    }
+    .menu li a img {
+        display: none;
+        width: 150px; /* Image width */
+        height: auto;
+        object-fit: cover;
+    }
+        
+    .menu li a.active img {
+        display: inline; /* Exibe a imagem no item ativo */
+    }
+        
+    .menu li a.active::before {
+        content: '';
+    }
+
+    #logo{
+        margin-top: 5px;
+        height: 50px;
+            width: auto;
+    }
+
+    #nav{
+        margin: auto;
+        margin-top: 0px;
+        padding-top: 0px;
+    }
+
+    .footer {
+        margin-bottom: 0px; /* Removes any bottom margin */
+    }
+
+    .imgDev{
+        display: block;
+        width: 100px;
+        height: auto;
+        margin: auto;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        border: solid rgb(175, 135, 23) 3px;
+        border-radius: 5px;
+    }
+
+    .carrossel{
+        width:350px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        width: fit-content;
+        border-radius: 15px;
+        img{
+            border-radius: 15px;
+            margin-bottom: 15px;
+            width: 10em;
+            height: auto;
+        }
+    }
+}    
