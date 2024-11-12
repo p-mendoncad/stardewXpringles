@@ -8,13 +8,13 @@ body{
     height: 90vh;
     margin: 0px auto;
     padding: 0px auto;
-    background-color: #00112c;
+    background-color: rgb(219, 45, 45);
     
 }
   
 #logo{
     margin-top: 30px;
-    height: 100px;
+    height: 120px;
     width: auto;
 }
   
@@ -46,8 +46,9 @@ header{
 
 .menu li a {
     text-decoration: none;
-    font-size: 20px;
+    font-size: 24px;
     color: #333;
+    font-family: stardew;
 }
 
 .menu li a img {
@@ -96,12 +97,13 @@ header{
 }
 .carrosselBox  h2{
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: micro5, Arial, Helvetica, sans-serif;
     display: flex;
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
+    font-size: 120px;
     width: fit-content;
+}
+.carrosselBox  p{
+    margin-bottom: 30px;
 }
 .carrossel{
     max-width:500px;
@@ -109,45 +111,46 @@ header{
     justify-content: center;
     align-items: center;
     border-radius: 15px;
-    width: fit-content;
+    width: ;
     border-radius: 15px;
     img{
         border-radius: 15px;
         margin-bottom: 15px;
-        width: 15em;
-        height: auto;
+        height: 500px;
+        width: auto;
     }
 }
   
 p{
     color: rgb(0, 0, 0);
     background-color: #cdf1ffaf;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: micro5, Arial, Helvetica, sans-serif;
     width:70vw;
     margin:auto;
     padding: 10px;
     padding-top: 5px;
     text-align: justify;
-    font-size: 16px;
+    font-size: 24px;
 }
   
 #historia{
     border: solid rgb(175, 135, 23) 3px;
     border-radius: 5px;
+    box-shadow: 3px 3px #00000025;
 }
   
 h1{
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
+    font-family: micro5, Arial, Helvetica, sans-serif;
+    font-size: 30px;
 }
   
 h2{
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-family: micro5, Arial, Helvetica, sans-serif;
+    font-size: 28px;
 }
   
 #link{
@@ -157,7 +160,7 @@ h2{
 a{
     text-align: center;
     color: white;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:stardew, Arial, Helvetica, sans-serif;
     font-size: 16px;
     text-decoration: none;
 }
@@ -178,83 +181,6 @@ a:hover{
     border-radius: 5px;
 }
 
-/* Footer styling */
-.footer {
-    position: static;
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-}
-
-.footer-content {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    flex-wrap: wrap;
-}
-
-.footer-section {
-    flex: 1;
-    margin: 10px;
-    min-width: 200px;
-}
-
-.footer-section h3 {
-    margin-bottom: 10px;
-    color: #f2f2f2;
-}
-
-.footer-section p{
-    color: #ccc;
-    background-color: #ffffff00;
-    font-family: Arial, Helvetica, sans-serif;
-}
-.footer-section p, .footer-section ul, .footer-section a {
-    color: #ccc;
-    font-size: 14px;
-}
-
-.footer-section a {
-    text-decoration: none;
-    color: #ccc;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin: 5px 0;
-}
-
-.footer-section ul li a:hover {
-    color: #f2f2f2;
-}
-
-/* Social icons */
-.footer-section.social a img {
-    width: 24px;
-    margin-right: 10px;
-    transition: 0.3s;
-}
-
-.footer-section.social a img:hover {
-    opacity: 0.8;
-}
-
-/* Footer bottom */
-.footer-bottom {
-    text-align: center;
-    padding: 10px;
-    background-color: #222;
-    font-size: 14px;
-}
-
-footer{
-    margin-top: 10px;
-}
 
 @media screen and (max-width: 600px){
     body {
@@ -279,7 +205,7 @@ footer{
         display: flex;
         flex-direction: column;
         padding: 5px;
-        padding-bottom: 0px;
+        padding-bottom: 5px;
         margin-bottom: 5vh;
         background-color: #E40426;
     }
@@ -322,7 +248,7 @@ footer{
 
     #logo{
         margin-top: 5px;
-        height: 50px;
+        height: 60px;
             width: auto;
     }
 
@@ -332,8 +258,8 @@ footer{
         padding-top: 0px;
     }
 
-    .footer {
-        margin-bottom: 0px; /* Removes any bottom margin */
+    #secao2{
+        min-height: 1400px;
     }
 
     .imgDev{
@@ -358,8 +284,17 @@ footer{
         img{
             border-radius: 15px;
             margin-bottom: 15px;
-            width: 10em;
-            height: auto;
+            height:200px
+            width:auto;
         }
+    }
+    .carrosselBox  h2{
+        font-size: 60px;
+        padding-left: 10px;
+        padding-left: auto;
+    }
+
+    #secao2{
+        min-height: 1000px;
     }
 }    
