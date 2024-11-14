@@ -1,6 +1,6 @@
 html{
     min-width: 100%;
-    min-height: 100vh;
+    min-height: 100%;
 }
 
 
@@ -8,7 +8,7 @@ body{
     height: 90vh;
     margin: 0px auto;
     padding: 0px auto;
-    background-color: rgb(219, 45, 45);
+    background-color: rgb(28, 0, 36);
     
 }
   
@@ -35,6 +35,12 @@ header{
     min-height: 100vh;
     width: auto;
     padding-bottom: 5px;
+}
+
+#secao2{
+    min-height: 1000px;
+    background-color: rgb(219, 45, 45);
+
 }
 
 .menu {
@@ -87,37 +93,15 @@ header{
     height: 39px;
     padding-top: 19px;
 }
-  
-.mySlides {display:none;}
-    .carrosselBox{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;    
-}
-.carrosselBox  h2{
-    color: white;
-    font-family: micro5, Arial, Helvetica, sans-serif;
-    display: flex;
-    font-size: 120px;
-    width: fit-content;
-}
-.carrosselBox  p{
-    margin-bottom: 30px;
-}
-.carrossel{
-    max-width:500px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 15px;
-    border-radius: 15px;
-    img{
-        border-radius: 15px;
-        margin-bottom: 15px;
-        height: 500px;
-        width: auto;
-    }
+
+.imgIndex{
+    display: block;
+    margin-bottom: 15px;
+    height: 300px;
+    width: auto;
+    margin: auto;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
   
 p{
@@ -126,6 +110,8 @@ p{
     font-family: micro5, Arial, Helvetica, sans-serif;
     width:70vw;
     margin:auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
     padding: 10px;
     padding-top: 5px;
     text-align: justify;
@@ -248,17 +234,13 @@ a:hover{
     #logo{
         margin-top: 5px;
         height: 60px;
-            width: auto;
+        width: auto;
     }
 
     #nav{
         margin: auto;
         margin-top: 0px;
         padding-top: 0px;
-    }
-
-    #secao2{
-        min-height: 1400px;
     }
 
     .imgDev{
@@ -271,29 +253,13 @@ a:hover{
         border: solid rgb(175, 135, 23) 3px;
         border-radius: 5px;
     }
-
-    .carrossel{
-        width:350px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 15px;
-        width: fit-content;
-        border-radius: 15px;
-        img{
-            border-radius: 15px;
-            margin-bottom: 15px;
-            height:200px;
-            width: auto;
-        }
-    }
-    .carrosselBox  h2{
-        font-size: 60px;
-        padding-left: 10px;
-        padding-left: auto;
-    }
-
     #secao2{
-        min-height: 1000px;
+        height: 400px;
+    }
+    .imgIndex{
+        border-radius: 15px;
+        margin-bottom: 15px;
+        height: 150px;
+        width: auto;
     }
 }    
