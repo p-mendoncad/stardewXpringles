@@ -350,6 +350,9 @@ footer {
     #secao2{
         min-height: auto;
     }
+    #secao3{
+        min-height: auto;
+    }
     .imgIndex{
         border-radius: 15px;
         margin-bottom: 15px;
