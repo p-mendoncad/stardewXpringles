@@ -277,6 +277,9 @@ footer {
     #background{
         min-height: auto;
     }
+    #star{
+        visibility:hidden;
+    }
 
     header{
         height: 180px;
