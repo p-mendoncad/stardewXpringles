@@ -274,7 +274,9 @@ footer {
     body, html {
         overflow-x: hidden; /* Disables horizontal scrolling */
     }
-    
+    #background{
+        min-height: auto;
+    }
 
     header{
         height: 180px;
@@ -343,7 +345,7 @@ footer {
     }
 
     #secao2{
-        min-height: fit-content;
+        min-height: auto;
     }
     .imgIndex{
         border-radius: 15px;
