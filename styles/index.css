@@ -44,6 +44,18 @@ header{
 
 }
 
+
+#secao3{
+    min-height: 500px ;
+    background-image: url(../images/farm.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#secao3 h2{
+    text-shadow: 1px 1px 0 #000;
+}
+
+
 .menu {
     list-style-type: none;
     padding: 0px;
@@ -97,19 +109,26 @@ header{
 
 .imgIndex{
     display: block;
-    margin-bottom: 15px;
     height: 300px;
     width: auto;
-    margin: auto;
     margin-bottom: 15px;
     margin-top: 15px;
 }
-
+#star{
+    display: flex;
+    justify-content: center;
+}
 #starBatataStar{
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
-
+#starP{
+    width: 100px;
+    height: 100px;
+    justify-content: center;
+    align-self: center;
+}
 p{
     color: rgb(0, 0, 0);
     background-color: #cdf1ffaf;
@@ -123,7 +142,8 @@ p{
     padding-top: 5px;
     padding-bottom: 5px;
     text-align: justify;
-    font-size: 24px;
+    font-size: 30px;
+    text-shadow: -0.5px -0.5px 0 #fff;
 }
   
 #historia{
@@ -136,14 +156,15 @@ h1{
     text-align: center;
     color: white;
     font-family: micro5, Arial, Helvetica, sans-serif;
-    font-size: 30px;
+    font-size: 45px;
+    text-shadow: 1px 1px 0 #000;
 }
   
 h2{
     text-align: center;
     color: white;
     font-family: micro5, Arial, Helvetica, sans-serif;
-    font-size: 28px;
+    font-size: 40px;
 }
   
   
@@ -175,6 +196,17 @@ a{
 
 }
 
+#qrcode{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-bottom: 0px;
+    padding-bottom: 15px;
+    margin-top: 0px;
+}
+
+
 /*footer{
     margin: 0;
     padding: 0;
@@ -189,10 +221,14 @@ a{
 footer {
     margin: 0;
     padding: 0;
-    background-color: #70c725;
+    background-color: #E40426;
     display: flex;
     flex-wrap: nowrap;
     padding: 20px;
+}
+#unip{
+    width: 100px;
+    height: auto;
 }
 
 #map{
@@ -204,13 +240,14 @@ footer {
 
 .redes{
     width: 60px;
-    height: auto;
+    height: 60px;
 }
 
 .footer-section {
     flex: 1; /* Distribui espaço uniformemente */
     text-align: center;
     width:22.5vw;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -226,12 +263,11 @@ footer {
     justify-content: center;
 }
 
-
 @media screen and (max-width: 600px){
     body {
         display: flex;
         flex-direction: column;
-        min-height: 100vh;
+        min-height: fit-content;
         margin: 0;
     }
 
@@ -297,7 +333,6 @@ footer {
         margin-top: 0px;
         padding-top: 0px;
     }
-
     .imgDev{
         display: block;
         width: 100px;
@@ -307,9 +342,8 @@ footer {
         margin-top: 10px
     }
 
-
     #secao2{
-        height: auto;
+        min-height: fit-content;
     }
     .imgIndex{
         border-radius: 15px;
@@ -319,5 +353,9 @@ footer {
     }
     footer{
         flex-direction: column;
+        align-items: center;
+    }
+    #unip{
+        margin-bottom: 10px;
     }
 }    
